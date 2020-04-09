@@ -1,0 +1,38 @@
+<center>
+    <h1>Sum</h1><br>
+    <%= @num1 %> + <%= @num2 %> = <%= @result %>
+    
+    <hr>
+    <hr>
+    
+    <h1>Simple Calculator</h1>
+    <%= form_tag "/sum" do %>
+    <%= text_field_tag :number1 %>
+    <%= text_field_tag :number2 %>
+    <%= submit_tag "+" %>
+    <% end %>
+    
+    <hr>
+    
+    <%= form_tag "/subtract" do %>
+    <%= text_field_tag :number1 %>
+    <%= text_field_tag :number2 %>
+    <%= submit_tag "-" %>
+    <% end %>
+    
+    <hr>
+    
+    <%= form_tag "/multiply" do %>
+    <%= text_field_tag :number1 %>
+    <%= text_field_tag :number2 %>
+    <%= submit_tag "*" %>
+    <% end %>
+    
+    <hr>
+    
+    <%= form_tag "/divide" do %>
+    <%= text_field_tag :number1 %>
+    <%= text_field_tag :number2 %>
+    <%= submit_tag "/" %>
+    <% end %>
+</center>
